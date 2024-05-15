@@ -1,4 +1,4 @@
-package practice2;
+package XoGame;
 
 import java.util.Arrays;
 

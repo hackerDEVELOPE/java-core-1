@@ -1,6 +1,5 @@
-package practice2;
+package XoGame;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Main {

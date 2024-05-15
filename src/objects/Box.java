@@ -1,4 +1,4 @@
-package practice5;
+package objects;
 
 import java.util.Objects;
 
