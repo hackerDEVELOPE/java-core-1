@@ -1,9 +1,7 @@
-package gameXO;
+package gameXOSwing;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class GameWindow extends JFrame {
     static final int WINDOW_POS_X = 500;

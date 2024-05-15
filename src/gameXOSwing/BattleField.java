@@ -1,4 +1,4 @@
-package gameXO;
+package gameXOSwing;
 
 import javax.swing.*;
 import java.awt.*;

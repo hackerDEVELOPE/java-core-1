@@ -1,7 +1,6 @@
-package gameXO;
+package gameXOSwing;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class Logic {
     static int SIZE = 3;
@@ -34,7 +33,7 @@ public class Logic {
         aiTurn();
         printMap();
         if ((checkWin(DOT_O))) {
-            System.out.println("AI WunderVaffel wins");
+            System.out.println("AI wins");
             return;
         }
         if (mapIsFull()) {

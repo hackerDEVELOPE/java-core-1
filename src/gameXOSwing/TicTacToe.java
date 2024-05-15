@@ -1,4 +1,4 @@
-package gameXO;
+package gameXOSwing;
 
 public class TicTacToe {
     public static void main(String[] args) {

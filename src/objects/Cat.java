@@ -1,4 +1,4 @@
-package practice5;
+package objects;
 
 public class Cat {
     private String name;

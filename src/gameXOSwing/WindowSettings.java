@@ -1,4 +1,4 @@
-package gameXO;
+package gameXOSwing;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
