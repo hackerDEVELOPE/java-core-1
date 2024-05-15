@@ -22,7 +22,6 @@ public class GameWindow extends JFrame {
         battleField = new BattleField(this);
         add(battleField, BorderLayout.CENTER);
 
-
         JPanel panel = new JPanel(new GridLayout(1, 2));
         JButton btnNewGame = new JButton("Play");
         JButton btnExit = new JButton("Exit");
@@ -33,13 +32,9 @@ public class GameWindow extends JFrame {
         btnNewGame.setBackground(Color.CYAN);
 
         btnExit.addActionListener(e -> System.exit(0));
-
         btnNewGame.addActionListener(e -> settingsWindow.setVisible(true));
-
-
         setVisible(true);
     }
-
     void startNewGame(int size, int winline) {
         battleField.startNewGame(size, winline);
     }

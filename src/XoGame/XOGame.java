@@ -6,15 +6,13 @@ import java.util.Scanner;
 public class XOGame {
     static final int SIZE = 3;
     static final int DOTS_TO_WIN = 3;
-
     static final char DOT_X = 'X';
     static final char DOT_O = 'O';
     static final char DOT_EMPTY = '.';
-
     static char[][] map;
-
     static Scanner sc = new Scanner(System.in);
     static Random random = new Random();
+
 
     public static void main(String[] args) {
         initMap();
@@ -35,7 +33,7 @@ public class XOGame {
             aiTurn();
             printMap();
             if ((checkWin(DOT_O))) {
-                System.out.println("AI WunderVaffel wins");
+                System.out.println("AI wins");
                 break;
             }
             if (mapIsFull()) {
@@ -44,7 +42,6 @@ public class XOGame {
             }
         }
     }
-
     public static void initMap() {
         map = new char[SIZE][SIZE];
         for (int i = 0; i < SIZE; i++) {
@@ -53,7 +50,6 @@ public class XOGame {
             }
         }
     }
-
     public static void printMap() {
         System.out.print("  ");
         for (int i = 1; i <= SIZE; i++) {
@@ -68,7 +64,6 @@ public class XOGame {
             System.out.println();
         }
     }
-
     public static void humanTurn() {
         int x, y;
         do {

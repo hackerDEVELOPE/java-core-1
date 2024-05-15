@@ -10,10 +10,5 @@ public class Main {
         dog.swim(24);
         char yy = 'y';
         char xx = 'x';
-
     }
-
-
-
-
 }

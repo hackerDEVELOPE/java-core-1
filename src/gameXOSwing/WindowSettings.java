@@ -12,7 +12,6 @@ public class WindowSettings extends JFrame {
     static final int WINDOW_WIDTH = 400;
     static final int WINDOW_HEIGTH = 300;
 
-
     private static final int MIN_FIELD_SIZE = 3;
     private static final int MAX_FIELD_SIZE = 10;
 
@@ -64,7 +63,6 @@ public class WindowSettings extends JFrame {
             setVisible(false);
 
         });
-
         setVisible(false);
     }
 }

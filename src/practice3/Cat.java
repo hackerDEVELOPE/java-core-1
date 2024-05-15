@@ -7,7 +7,6 @@ public class Cat extends Animal{
         super(runDistance, swimDistance, name);
         System.out.println("Папичей создано: " + ++catCounter);
     }
-
     @Override
     public void run(int dist) {
         if (dist < 200) {

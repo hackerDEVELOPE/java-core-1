@@ -6,7 +6,6 @@ public class Doggy extends Animal {
         super(runDistance, swimDistance, name);
         System.out.println("Тобиков создано: " + ++doggyCounter);
     }
-
     @Override
     public void run(int dist) {
         if (dist < 500) {

@@ -9,11 +9,10 @@ public class BattleField extends JPanel {
     private GameWindow gameWindow;
     private int size;
     private int winline;
-
     private boolean isInit;
-
     private int cellWidth;
     private int cellHeigth;
+
 
     public BattleField(GameWindow gameWindow) {
         this.gameWindow = gameWindow;
@@ -32,14 +31,12 @@ public class BattleField extends JPanel {
             }
         });
     }
-
     void startNewGame(int size, int winline) {
         this.size = size;
         this.winline = winline;
         isInit = true;
         repaint();
     }
-
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -68,7 +65,6 @@ public class BattleField extends JPanel {
         }
         repaint();
     }
-
     private void drawX(Graphics g, int cellX, int cellY) {
         g.setColor(Color.BLUE);
         ((Graphics2D) g).setStroke(new BasicStroke(2f));

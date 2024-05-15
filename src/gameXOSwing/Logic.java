@@ -5,21 +5,17 @@ import java.util.Random;
 public class Logic {
     static int SIZE = 3;
     static int DOTS_TO_WIN = 3;
-
     static final char DOT_X = 'X';
     static final char DOT_O = 'O';
     static final char DOT_EMPTY = '.';
-
     static char[][] map;
-
     static Random random = new Random();
-
     static boolean gameFinished;
 
+
+
     static void go() {
-
         gameFinished = true;
-
         printMap();
         if (checkWin(DOT_X)) {
             System.out.println("Human wins");
@@ -29,7 +25,6 @@ public class Logic {
             System.out.println("Draw");
             return;
         }
-
         aiTurn();
         printMap();
         if ((checkWin(DOT_O))) {
@@ -43,7 +38,6 @@ public class Logic {
         gameFinished = false;
 
     }
-
     public static void initMap() {
         map = new char[SIZE][SIZE];
         for (int i = 0; i < SIZE; i++) {
@@ -52,7 +46,6 @@ public class Logic {
             }
         }
     }
-
     public static void printMap() {
         System.out.print("  ");
         for (int i = 1; i <= SIZE; i++) {
@@ -67,7 +60,6 @@ public class Logic {
             System.out.println();
         }
     }
-
     public static void humanTurn(int x, int y) {
         if (isCellValid(y, x)) {
             map[y][x] = DOT_X;
@@ -176,7 +168,6 @@ public class Logic {
         }
         aiRandomTurn();
     }
-
     public static void aiRandomTurn() {
         int x, y;
         do {
@@ -185,7 +176,6 @@ public class Logic {
         } while (!isCellValid(y, x));
         map[y][x] = DOT_O;
     }
-
     public static boolean aiDefenseTurn() {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
@@ -200,7 +190,6 @@ public class Logic {
         }
         return false;
     }
-
     public static boolean checkLine(int cy, int cx, int vy, int vx, char dot, int dotsToWin) {
         if (cx + vx * (dotsToWin - 1) > SIZE - 1 || cy + vy * (dotsToWin - 1) > SIZE - 1 || cy + vy * (dotsToWin - 1) < 0) {
             return false;
@@ -212,7 +201,6 @@ public class Logic {
         }
         return true;
     }
-
     public static boolean checkWinLines(char dot, int dotsToWin) {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
