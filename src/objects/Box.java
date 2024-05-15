@@ -10,7 +10,6 @@ public class Box {
         this.color = color;
         this.size = size;
     }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

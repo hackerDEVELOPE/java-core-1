@@ -2,14 +2,6 @@ package objects;
 
 public class Main {
     public static void main(String[] args) {
-/*        Box box1 = new Box("red", 3);
-        Box box2 = new Box("red", 3);
-        System.out.println(box1.equals(box2));*/
-
-/*        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 100000; i++) {
-            sb.append("A");
-        }*/
         Plate plate = new Plate(100);
         Cat[] cat = {
                 new Cat("Kotik", 25),
@@ -19,7 +11,6 @@ public class Main {
                 new Cat("Lotik", 30),
                 new Cat("Tobik", 35)
         };
-
         for (int i = 0; i < cat.length; i++) {
             if (cat[i].eat(plate)) continue;
             else {

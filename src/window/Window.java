@@ -2,8 +2,6 @@ package window;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class Window extends JFrame {
     public Window() {
@@ -30,13 +28,6 @@ public class Window extends JFrame {
 
         JTextArea textArea = new JTextArea();
         add(textArea, BorderLayout.CENTER);
-
-/*        button.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                textArea.append("hello \n");
-            }
-        });*/
         button.addActionListener(e -> textArea.append("hello \n"));
 
         button2.addActionListener(e -> textArea.append("world\n"));

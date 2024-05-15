@@ -8,14 +8,12 @@ public abstract class Animal {
     protected int swimDistance;
     protected String name;
     protected static int animalCounter = 0;
-
     public void run(int dist) {
         System.out.println(name + " пробежал " + dist + " м.");
     }
     public void swim(int dist){
         System.out.println(name + " проплыл " + dist + " м.");
     }
-
     public Animal(int runDistance, int swimDistance, String name) {
         this.runDistance = runDistance;
         this.swimDistance = swimDistance;
